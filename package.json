@@ -1,0 +1,28 @@
+{
+  "name": "functional-playground",
+  "version": "1.0.0",
+  "description": "Trying to better understand FP",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start:compiler": "rimraf ./dist & swc ./src -d ./dist --config-file .swcrc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "fantasy-io": "^0.0.1",
+    "fantasy-land": "^5.0.0",
+    "fluture": "^14.0.0",
+    "folktale": "^2.3.2",
+    "ramda": "^0.28.0",
+    "rimraf": "^3.0.2",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.196"
+  }
+}
