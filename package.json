@@ -16,6 +16,7 @@
     "fantasy-io": "^0.0.1",
     "fantasy-land": "^5.0.0",
     "fluture": "^14.0.0",
+    "fluture-sanctuary-types": "^7.1.0",
     "folktale": "^2.3.2",
     "ramda": "^0.28.0",
     "rimraf": "^3.0.2",

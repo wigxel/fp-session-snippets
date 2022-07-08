@@ -224,6 +224,13 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+fluture-sanctuary-types@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/fluture-sanctuary-types/-/fluture-sanctuary-types-7.1.0.tgz#b9a6f5ec556e66e7123a3d67b26d9d59b570e8a8"
+  integrity sha512-Fnpu/D+a9u4nlMplKKR6iRKZhauYhFUibR67WIZ03SQGe+SwyrY3JjFKJs1zEPtB5diFJ+0I6gA6ICIgAu8iFA==
+  dependencies:
+    sanctuary-type-identifiers "^3.0.0"
+
 fluture@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/fluture/-/fluture-14.0.0.tgz#81e1cae996a262e214aa2a8d7845fe1359018e3b"

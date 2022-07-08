@@ -2,7 +2,7 @@ import { create, env } from "sanctuary";
 import $ from "sanctuary-def";
 import { default as type } from "sanctuary-type-identifiers";
 import * as r from "ramda";
-import { Just } from "folktale/maybe";
+import { env as flutureEnv } from "fluture-sanctuary-types";
 
 //    Identity :: a -> Identity a
 const Identity = (x) => {
@@ -35,9 +35,9 @@ const IdentityType = $.UnaryType("Identity")(
   "http://example.com/my-package#Identity"
 )([])((x) => type(x) === identityTypeIdent)((identity) => [identity.value]);
 
-const S = create({
+export const S = create({
   checkTypes: true,
-  env: env.concat([IdentityType($.Unknown)]),
+  env: env.concat([IdentityType($.Unknown)]).concat(flutureEnv),
 });
 
 const value = S.map(S.sub(23))(Identity(90));
@@ -101,4 +101,5 @@ const getJuice = (index) => {
 console.log("Testing out alt", S.alt(S.Just("Water"))(getJuice(1)));
 console.log("Testing out alt", S.alt(S.Just("Water"))(getJuice(0)));
 
-// console.log(S.add(1)(S.Just(2)));
+console.log("Finally", r.map(S.add(1))(S.Just(2)));
+ 

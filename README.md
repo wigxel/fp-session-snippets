@@ -19,5 +19,5 @@ Observe that we are watching the equivalent file in the `/dist` folder. If you w
 ```bash
 > yarn watch \"clear && node ./dist/index.js\" ./src
 or
-> npm watch \"clear && node ./dist/index.js\" ./src
+> npx watch \"clear && node ./dist/index.js\" ./src
 ```

@@ -8,7 +8,7 @@ import * as r from "ramda";
 // Future -> reject resolve
 // Either -> Left Right
 
-// Promise.map() // not a functor
+// Promise.then() // not a functor
 // Future.map() // functor
 
 // fetch()
